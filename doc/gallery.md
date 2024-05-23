@@ -54,6 +54,13 @@ Catalytic residues are shown as balls and sticks in the molecular view, and high
 3.  Combined RIN with different types of non-covalent interactions [^4],[^5],[^6]
 4.  Combined RIN with generic residue interactions [^5],[^7]
 
+[![Figure 4](examples/combined.png)](examples/combined.png)
+
+* * *
+
+Footnotes
+---------
+
 [^1]: Catalytic site residues/nodes are in red, their interacting residues/nodes in pink, and all other residues/nodes are colored according to secondary structure (dark blue for helices, dark green for strands).  
 [^2]: Non-covalent residue interactions have different colors, that is, interatomic contacts in blue, hydrogen bonds in red, overlaps in gray.
 [^3]: Nodes colored according to secondary structure (red for helices, blue for strands).  
@@ -62,4 +69,3 @@ Catalytic residues are shown as balls and sticks in the molecular view, and high
 [^6]: Edges are colored according to interaction type (interatomic contacts in blue, hydrogen bonds in red, overlaps in gray).  
 [^7]: Interactions between residues only in the alpha chain are green, interactions only in the beta chain are red, and all other interaction edges are black.  
 
-[![Figure 4](examples/combined.png)](examples/combined.png)
