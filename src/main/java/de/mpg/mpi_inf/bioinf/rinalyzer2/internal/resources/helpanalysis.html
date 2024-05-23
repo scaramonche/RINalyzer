@@ -1,0 +1,110 @@
+<html>
+  <head>
+    <style type="text/css">
+      <!--
+        body { font-family: Dialog; font-size: 11pt; text-align: justify }
+        ul.noindent { margin-left: 8px; padding-left: 8px }
+      -->
+    </style>    
+  </head>
+  <body>
+    <p>
+      <b>Settings for the centrality analysis performed by RINalyzer </b>
+    </p>
+    <ul class="noindent">
+      <li>
+        <p>
+          <b>Choose attribute as edge weight:</b><br>This setting allows you 
+          to define edge weights for the network to be analyzed among all numeric
+          edge attributes stored in the current Cytoscape session. The default 
+          option is <i>None</i> and stands for no specific weight attribute. In 
+	  this case all edges are assigned the value of default edge weight. Note
+	  that weights equal to zero will be ignored during the computation, i.e. 
+ 	  edges with weight equal to 0 will be ignored.
+        </p>
+      </li>
+      <li>
+        <p>
+          <b>Handle multiple edges:</b><br>RINs have multiple edges. However, 
+	  these have to be eliminated for the computation of centrality measures. 
+	  You can achieve this by either selecting only one edge type or the option
+	  <i>Mean weight</i>. The first case is very suitable for a network 
+	  that has an edge type with an overall weight being a combination of 
+	  the weights of the multiple edge types. If this is not the case, then you 
+	  can use the mean weight, which is the mean over the weights of the 
+	  multiple edges for each pair of directly connected nodes.
+        </p>
+      </li>
+      <li>
+        <p>
+          <b>Handle negative weights:</b><br>Since the RINalyzer centralities 
+          are defined only for non negative weights, negative weights have to 
+          be removed before computation. This could be done either by ignoring 
+          (option <i>Ignore</i>) them or by reverting them by their absolute 
+		  value (option <i>Revert</i>).
+        </p>
+      </li>
+      <li>
+        <p>
+          <b>Convert scores into distances:</b><br>Shortest path 
+	  centrality measures are computed with the assumption that the weights 
+	  represent distances, i.e. the smaller the weight, the stronger the 
+	  interaction. However, if your network has similarity weights, you 
+	  can select to convert them into distances by either inverting them 
+	  (<i>1/value</i>) or by subtracting each value from a maximal value 
+	  (<i>max - value</i>). Note that if your edge weights are equal to 
+	  zero, they will not be inverted. The maximum is the biggest weight 
+	  value increased by one, in order to avoid weights equal to zero after 
+	  the subtraction.
+        </p>
+      </li>
+      <li>
+        <p>
+          <b>Default edge weight (if missing):</b><br>This value is used as 
+          default weight when there are missing weight attribute values. For 
+	  example, if there is no weight attribute, i.e. you selected the 
+	  option <i>None</i>, the default edge weight is assigned to 
+	  all edges. If additionally the default value is 1, the network is 
+	  treated as unweighted.
+        </p>
+      </li>
+      <li>
+        <p>
+          <b>Cutoff for shortest path degree:</b><br>Weighted shortest path
+          degree counts all neighbors of a node that are at distance smaller
+	  or equal a cutoff. Note that you should choose this value suitable
+          to your edge weights.
+        </p>
+      </li>
+      <li>
+        <p>
+          <b>For betweenness computation exclude paths between nodes within 
+          the same set(s)</b><br> This option is enabled when the subnetwork
+          of the nodes selected for the analysis is disconnected. In such 
+          case you may want to see the betweenness values computed only in 
+          respect to pairs of nodes that are connected by paths containing 
+          nodes that are not selected.
+        </p>
+      </li>
+    </ul>
+    <p><b>For the computation of the centrality measures we assume that the network</b></p>
+    <ul class="noindent">
+      <li>
+        <p> is undirected, </p>
+      </li>
+      <li>
+        <p> is connected, </p>
+      </li>
+      <li>
+        <p> has no loops, </p>
+      </li>
+      <li>
+        <p> is weighted, and </p>
+      </li>
+      <li>
+        <p> can have multiple edges.</p>
+      </li>
+    </ul>
+    <p>Therefore, we cannot guarantee meaningful results in case the mentioned assumptions do not hold for the analyzed network.</p>
+  </body>
+</html>

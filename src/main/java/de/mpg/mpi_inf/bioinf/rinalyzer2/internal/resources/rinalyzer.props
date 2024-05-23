@@ -1,0 +1,27 @@
+# RINalyzer visual props
+color.Background=255,255,255
+color.default=255,146,148
+color.Helix=255,0,0
+color.Sheet=0,0,255
+color.Loop=153,153,153
+color.pp=0,0,0
+color.backbone=0,0,0
+color.combi\:all_all=0,0,0
+color.cnt\:mc_mc=0,0,255
+color.cnt\:mc_sc=0,153,255
+color.cnt\:sc_sc=153,204,255
+color.hbond\:mc_mc=153,0,51
+color.hbond\:mc_sc=255,0,0
+color.hbond\:sc_sc=255,204,204
+color.ovl\:mc_mc=51,51,51
+color.ovl\:mc_sc=153,153,153
+color.ovl\:sc_sc=204,204,204
+color.cnt\:mc_lig=0,153,51
+color.cnt\:sc_lig=102,255,0
+color.hbond\:mc_lig=153,153,0
+color.hbond\:sc_lig=255,255,0
+bbedgewidth=5
+edgewidth=2
+edgespace=3
+labelsize=12
+nodesize=40
