@@ -28,7 +28,7 @@ Requirements and Installation for Cytoscape 2.x
 1.  Install RINalyzer plugin:
 	1.  Ensure that Java 6 is installed using this test [web page](http://www.java.com/en/download/help/testvm.xml). If Java 6 is not installed, just update it or download and install it from [here](http://java.com/en/download/manual.jsp).
 	2.  Download and install the latest Cytoscape version 2.8.0 from the [Cytoscape download page](http://www.cytoscape.org/download.php).
-	3.  Download the file RINalyzer.jar and copy it into the plugins folder of Cytoscape, e.g.  
+	3.  Download the file RINalyzer.jar from [here](../release/cytoscape_v2.8.x_1.3/RINalyzer.jar) and copy it into the plugins folder of Cytoscape, e.g.  
 	    C:\\Program Files\\Cytoscape\_v2.8.0\\plugins\\ on a Windows machine; /Applications/Cytoscape\_v2.8.0/plugins/  
 	    on a Macintosh; and $HOME/Cytoscape\_v2.8.0/plugins/ on a Linux machine.
 	4.  Now start Cytoscape and find the RINalyzer menu options in the Plugins menu.
