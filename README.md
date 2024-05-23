@@ -3,17 +3,15 @@
 News
 ----
 
-**2014/06/30: A new version of RINalyzer for Cytoscape 3.x is released.**
-  
-RINalyzer has been greatly extended with new functionality and is now using the [structureViz2 app](http://www.cgl.ucsf.edu/cytoscape/structureViz2/) to interact with UCSF Chimera. For a brief introduction of the new features click [here](doc/app_features.php). The RINalyzer app is now available for download [here](plugin.php) and the structureViz app [here](http://apps.cytoscape.org/apps/structureViz2). All requirements and installation instructions are available [here](./doc/install.php).  
+**June 2014**
+A new version of RINalyzer for Cytoscape 3.x is released. RINalyzer has been greatly extended with new functionality and is now using the [structureViz2 app](http://www.cgl.ucsf.edu/cytoscape/structureViz2/) to interact with UCSF Chimera. For a brief introduction of the new features click [here](doc/app_features.php). The RINalyzer app is now available for download [here](plugin.php) and the structureViz app [here](http://apps.cytoscape.org/apps/structureViz2). All requirements and installation instructions are available [here](./doc/install.php).  
 
-**2014/06/30: A new version of RINerator is released.** 
+**December 2014**
+A new version of RINerator is released. In particular, it computes conservation scores from a user-specified multiple sequence alignment, retrieves biochemical amino acid properties from external resources, and generates RINs compatible with Cytoscape 3.x and RINalyzer 2.x. For more information, see the [RINerator webpage](./doc/rinerator.md).  
 
-In particular, it computes conservation scores from a user-specified multiple sequence alignment, retrieves biochemical amino acid properties from external resources, and generates RINs compatible with Cytoscape 3.x and RINalyzer 2.x. For more information, see the [RINerator webpage](rinerator.php).  
-
+Our poster from VIZBI 2014 (abstract available [here](http://www.vizbi.org/Posters/2014/D16)):
 [![Figure](doc/images/app3_small.png)](doc/images/app3.png)
 
-Our poster at VIZBI 2014 (abstract available [here](http://www.vizbi.org/Posters/2014/D16)).
 
 * * *
 
@@ -24,7 +22,7 @@ RINalyzer provides a number of important methods for analyzing and visualizing r
 
 RINalyzer allows simultaneous, interactive 2D visualization and exploration of a RIN in Cytoscape, together with the corresponding molecular 3D structure visualized in [UCSF Chimera](http://www.cgl.ucsf.edu/chimera/). Furthermore, RINalyzer offers the computation and illustration of a comprehensive set of weighted centrality measures for relating spatially distant residue nodes and discovering critical residues and their long-range interaction paths in protein structures. Another feature is the network comparison of aligned protein structures by constructing a combined RIN, which enables the detailed comparative analysis of residue interactions in different proteins. In addition, RINalyzer supports the interactive exploration by providing easy-to-use filters and the generation of subnetworks and aggregated networks. A list of all main features of RINalyzer as well as an overview screenshot can be found [here](doc/features.php).
 
-RINalyzer is complemented by the [RINerator module](rinerator.php), which generates user-defined RINs from a 3D protein structure. In contrast to previous simplistic interaction definition approaches based on spatial atomic distance between residues, RINerator enables a more realistic representation by considering different biochemical interaction types and even quantifying the strength of individual interactions.
+RINalyzer is complemented by the [RINerator module](./doc/rinerator.md), which generates user-defined RINs from a 3D protein structure. In contrast to previous simplistic interaction definition approaches based on spatial atomic distance between residues, RINerator enables a more realistic representation by considering different biochemical interaction types and even quantifying the strength of individual interactions.
 
 Since version 2.0 RINalyzer is using the [structureViz2 app](http://www.cgl.ucsf.edu/cytoscape/structureViz2/) to interact with UCSF Chimera and both apps complement each other.
 
@@ -68,7 +66,7 @@ RINs compatible with RINalyzer and structureViz can be created in several differ
 
 1.  RINs can be generated on the fly from a currently open structure in UCSF Chimera using the Chimera built-in methods for contact and hydrogen bond detection.  
 2.  Precomputed RINs generated using the RINerator module as described [here](./doc/rindata_gen.php) can be downloaded from our simple web interface [RINdata](rindata.php).
-3.  The [RINerator](rinerator.php) module can be used to generate specific RINs, for example, including ligands, or in a batch fashion for multiple structures. 
+3.  The [RINerator](./doc/rinerator.md) module can be used to generate specific RINs, for example, including ligands, or in a batch fashion for multiple structures. 
 4.  The [RING](http://protein.cribi.unipd.it/ring/) web server can also be used to generate different types of RINs.
   
 
