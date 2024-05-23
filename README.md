@@ -20,7 +20,7 @@ We presented a poster at VIZBI 2014 (abstract available [here](http://www.vizbi.
 Description
 -----------
 
-RINalyzer provides a number of important methods for analyzing and visualizing residue interaction networks (RINs). A RIN is constructed from the three-dimensional structure of a protein as stored in PDB files from the [Protein Data Bank](http://www.rcsb.org/). Network nodes and edges represent amino acid residues and their molecular interactions, respectively. The network topology of RINs is normally characterized by undirected and weighted interaction edges between residue nodes. RINalyzer is a Java plugin for [Cytoscape](http://www.cytoscape.org), a free software platform for the analysis and visualization of molecular interaction networks.
+RINalyzer provides a number of important methods for analyzing and visualizing residue interaction networks (RINs) as shown in these [examples](./doc/gallery.md). A RIN is constructed from the three-dimensional structure of a protein as stored in PDB files from the [Protein Data Bank](http://www.rcsb.org/). Network nodes and edges represent amino acid residues and their molecular interactions, respectively. The network topology of RINs is normally characterized by undirected and weighted interaction edges between residue nodes. RINalyzer is a Java plugin for [Cytoscape](http://www.cytoscape.org), a free software platform for the analysis and visualization of molecular interaction networks.
 
 RINalyzer allows simultaneous, interactive 2D visualization and exploration of a RIN in Cytoscape, together with the corresponding molecular 3D structure visualized in [UCSF Chimera](http://www.cgl.ucsf.edu/chimera/). Furthermore, RINalyzer offers the computation and illustration of a comprehensive set of weighted centrality measures for relating spatially distant residue nodes and discovering critical residues and their long-range interaction paths in protein structures. Another feature is the network comparison of aligned protein structures by constructing a combined RIN, which enables the detailed comparative analysis of residue interactions in different proteins. In addition, RINalyzer supports the interactive exploration by providing easy-to-use filters and the generation of subnetworks and aggregated networks. A list of all main features of RINalyzer as well as an overview screenshot can be found [here](./doc/features.md).
 
@@ -30,7 +30,7 @@ Since version 2.0 RINalyzer is using the [structureViz2 app](http://www.cgl.ucsf
 
 A detailed documentation as well as storage and format specifications can be found [here](./doc/documentation.md).
 
-A tutorial for the first steps of using RINalyzer is available [here](tutorials.md). Further information and tutorials on using Cytoscape are available [here](http://cytoscape.org/documentation_users.html).
+A tutorial for the first steps of using RINalyzer is available [here](./doc/tutorials.md). Further information and tutorials on using Cytoscape are available [here](http://cytoscape.org/documentation_users.html).
 
     
 
