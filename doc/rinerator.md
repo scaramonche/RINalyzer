@@ -50,7 +50,7 @@ Contributors
 
 Nadezhda T. Doncheva (1), Olga Voitenko (1), Francisco S. Domingues (1,2), Olga Kalinina(1), and Mario Albrecht (1,3,4,5)  
 
-Affiliations as of 2014:    
+Affiliations as of 2014:
 1. Max Planck Institute for Informatics, Saarbrücken, Germany  
 2. Institute of Genetic Medicine, EURAC research, Bolzano, Italy  
 3. University Medicine Greifswald, Greifswald, Germany  

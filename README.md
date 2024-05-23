@@ -3,10 +3,10 @@
 News
 ----
 
-**June 2014**
+**June 2014**   
 A new version of RINalyzer for Cytoscape 3.x is released. RINalyzer has been greatly extended with new functionality and is now using the [structureViz2 app](http://www.cgl.ucsf.edu/cytoscape/structureViz2/) to interact with UCSF Chimera. For a brief introduction of the new features click [here](doc/app_features.php). The RINalyzer app is now available for download [here](plugin.php) and the structureViz app [here](http://apps.cytoscape.org/apps/structureViz2). All requirements and installation instructions are available [here](./doc/install.php).  
 
-**December 2014**
+**December 2014**   
 A new version of RINerator is released. In particular, it computes conservation scores from a user-specified multiple sequence alignment, retrieves biochemical amino acid properties from external resources, and generates RINs compatible with Cytoscape 3.x and RINalyzer 2.x. For more information, see the [RINerator webpage](./doc/rinerator.md).  
 
 Our poster from VIZBI 2014 (abstract available [here](http://www.vizbi.org/Posters/2014/D16)):
@@ -37,11 +37,14 @@ A tutorial for the first steps of using RINalyzer is available [here](tutorials.
 References
 ----------
 
-- Main paper: Doncheva, N.T., Klein, K., Domingues, F.S., Albrecht, M. (2011). **Analyzing and visualizing residue networks of protein structures.** _Trends in Biochemical Sciences_, **36**(4):179-182, [doi:10.1016/j.tibs.2011.01.002](http://dx.doi.org/doi:10.1016/j.tibs.2011.01.002).
+- Main paper   
+Doncheva, N.T., Klein, K., Domingues, F.S., Albrecht, M. (2011). **Analyzing and visualizing residue networks of protein structures.** _Trends in Biochemical Sciences_, **36**(4):179-182, [doi:10.1016/j.tibs.2011.01.002](http://dx.doi.org/doi:10.1016/j.tibs.2011.01.002).
 
-- Tutorial: Doncheva, N.T., Assenov, Y., Domingues, F.S., Albrecht, M. (2012). **Topological analysis and interactive visualization of biological networks and protein structures.** _Nature Protocols_, **7**:670-685, [doi:10.1038/nprot.2012.004](http://dx.doi.org/doi:10.1038/nprot.2012.004).
+- Tutorial   
+Doncheva, N.T., Assenov, Y., Domingues, F.S., Albrecht, M. (2012). **Topological analysis and interactive visualization of biological networks and protein structures.** _Nature Protocols_, **7**:670-685, [doi:10.1038/nprot.2012.004](http://dx.doi.org/doi:10.1038/nprot.2012.004).
 
-- Application: Doncheva, N.T., Klein, K., Morris, J.H., Wybrow, M., Domingues, F.S., and Albrecht, M. (2014). **Integrative visual analysis of protein sequence mutations.** _BMC Proceedings_, **8**(Suppl 2):S2, [doi:10.1186/1753-6561-8-S2-S2](http://dx.doi.org/doi:10.1186/1753-6561-8-S2-S2).
+- Application   
+Doncheva, N.T., Klein, K., Morris, J.H., Wybrow, M., Domingues, F.S., and Albrecht, M. (2014). **Integrative visual analysis of protein sequence mutations.** _BMC Proceedings_, **8**(Suppl 2):S2, [doi:10.1186/1753-6561-8-S2-S2](http://dx.doi.org/doi:10.1186/1753-6561-8-S2-S2).
 
 
 * * *
