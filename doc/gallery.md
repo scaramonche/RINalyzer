@@ -59,7 +59,6 @@ Catalytic residues are shown as balls and sticks in the molecular view, and high
 * * *
 
 Footnotes
----------
 
 [^1]: Catalytic site residues/nodes are in red, their interacting residues/nodes in pink, and all other residues/nodes are colored according to secondary structure (dark blue for helices, dark green for strands).  
 [^2]: Non-covalent residue interactions have different colors, that is, interatomic contacts in blue, hydrogen bonds in red, overlaps in gray.
