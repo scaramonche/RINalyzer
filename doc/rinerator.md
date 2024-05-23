@@ -12,7 +12,7 @@ A new version of RINerator is released. In particular, it computes conservation 
 Description
 -----------
 
-RINerator generates user-defined RINs from a 3D protein structure and enriches them with additional biochemical information. In contrast to previous simplistic interaction definition approaches based on spatial atomic distance between residues, RINerator enables a more realistic representation by considering different biochemical interaction types, such as hydrogen bonds and interactomic contacts, and even quantifying the strength of individual interactions. Furthermore, RINerator can calculate [conservation scores](./cons_scores.md) from a user-specified multiple sequence alignment and retrieve biochemical amino acid properties from external resources, such as [AAindex](http://www.genome.jp/aaindex/) and [ConSurfDB](http://bental.tau.ac.il/new_ConSurfDB/). The resulting networks and accompanying data can be visualized in Cytoscape using the [RINalyzer](../README.txt) and [structureViz](http://www.cgl.ucsf.edu/cytoscape/structureViz2/) apps.
+RINerator generates user-defined RINs from a 3D protein structure and enriches them with additional biochemical information. In contrast to previous simplistic interaction definition approaches based on spatial atomic distance between residues, RINerator enables a more realistic representation by considering different biochemical interaction types, such as hydrogen bonds and interactomic contacts, and even quantifying the strength of individual interactions. Furthermore, RINerator can calculate [conservation scores](./cons_scores.md) from a user-specified multiple sequence alignment and retrieve biochemical amino acid properties from external resources, such as [AAindex](http://www.genome.jp/aaindex/) and [ConSurfDB](http://bental.tau.ac.il/new_ConSurfDB/). The resulting networks and accompanying data can be visualized in Cytoscape using the [RINalyzer](../README.md) and [structureViz](http://www.cgl.ucsf.edu/cytoscape/structureViz2/) apps.
 
 ![Figure 1](./images/rinerator.png)
 
@@ -41,7 +41,7 @@ Reference
 
 Doncheva, N.T., Klein, K., Domingues, F.S., Albrecht, M. (2011)  
 **Analyzing and visualizing residue networks of protein structures.**  
-_Trends in Biochemical Sciences_, **36**(4):179-182, [doi:10.1016/j.tibs.2011.01.002](http://dx.doi.org/doi:10.1016/j.tibs.2011.01.002).
+*Trends in Biochemical Sciences*, **36**(4):179-182, [doi:10.1016/j.tibs.2011.01.002](http://dx.doi.org/doi:10.1016/j.tibs.2011.01.002).
 
 * * *
 
@@ -56,5 +56,3 @@ Affiliations as of 2014:
 3. University Medicine Greifswald, Greifswald, Germany  
 4. Graz University of Technology, Graz, Austria  
 5. BioTechMed-Graz, Graz, Austria  
-
-* * *
