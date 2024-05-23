@@ -11,7 +11,7 @@ RINalyzer has been greatly extended with new functionality and is now using the 
 
 In particular, it computes conservation scores from a user-specified multiple sequence alignment, retrieves biochemical amino acid properties from external resources, and generates RINs compatible with Cytoscape 3.x and RINalyzer 2.x. For more information, see the [RINerator webpage](rinerator.php).  
 
-![]({{ site.baseurl }}/doc/images/app3.png)
+[![Figure](doc/images/app3_small.png)](doc/images/app3.png)
 
 Our poster at VIZBI 2014 (abstract available [here](http://www.vizbi.org/Posters/2014/D16)).
 
