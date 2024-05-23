@@ -71,13 +71,13 @@ Degree and closeness are normalized by the number of selected nodes, and between
 ### Results Presentation
 
 After a successful computation, the `RINalyzer Centralities` panel appears as a new tab in the Cytoscape's Results Panel. It usually consists of at least three different panels, the first one contains general analysis information, and each consequent panel provides access to the values of a centrality measure. The `General Information` panel keeps track of the analyzed network, the set of selected nodes, and the analysis settings chosen for the current analysis run. The values of all computed centrality measures can be saved or visualized in a table by using the two buttons in this panel. For each computed centrality measure, RINalyzer offers three possible ways to examine the results:
-
-![Figure 2](images/results.png)
-
-**Figure 2:** Example for results presentation of network centrality analysis
-
 * **Save** the centrality values **into a file**. The user can choose to save a specific centrality measure (*Save* button of the corresponding measure) or all measure at once (*Save All* button at the bottom of the dialog) into a *centstats* file. The format specifications are described in Section [Centrality Results File](file*types.php#results_spec).
 * **Show** the centrality values **in a table**, which can be sorted by column. The table can display either only one measure or all measures at once. The first column displays the node identifiers, and the consecutive columns list the centrality values. 
 * **Use a selection filter** that selects nodes with centrality values in a specified numerical range. The selection range can be defined by moving the slider or by double-clicking on the slider and entering the desired range values. The minimal and maximal possible values are shown above the slider, and the current range values below the slider. An example is shown in Figure 2.
 
 Additionally, all centrality values are stored as node attributes. Thus, they can be further accessed and used in Cytoscape, e.g., for mapping node size or color to the values of a centrality measure.
+
+![Figure 2](images/results.png)
+
+**Figure 2:** Example for results presentation of network centrality analysis
+
