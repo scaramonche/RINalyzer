@@ -27,6 +27,6 @@ The last step of the network generation method is accomplished by the Python pac
 
 * * *
 
-[^1] Word JM, Lovell SC, Richardson JS, Richardson DC (1999): *Asparagine and Glutamine: Using Hydrogen Atom Contacts in the Choice of Side-chain Amide Orientation*, J Mol Biol, Vol. 285(4):1735-47.
+[^1]: Word JM, Lovell SC, Richardson JS, Richardson DC (1999): *Asparagine and Glutamine: Using Hydrogen Atom Contacts in the Choice of Side-chain Amide Orientation*, J Mol Biol, Vol. 285(4):1735-47.
 
-[^2] Word JM, Lovell SC, LaBean TH, Taylor HC, Zalis ME, Presley BK, Richardson JS, Richardson DC (1999): *Visualizing and quantifying molecular goodness-of-fit: small-probe contact dots with explicit hydrogen atoms*, J Mol Biol, Vol. 285(4):1711-33.
+[^2]: Word JM, Lovell SC, LaBean TH, Taylor HC, Zalis ME, Presley BK, Richardson JS, Richardson DC (1999): *Visualizing and quantifying molecular goodness-of-fit: small-probe contact dots with explicit hydrogen atoms*, J Mol Biol, Vol. 285(4):1711-33.
