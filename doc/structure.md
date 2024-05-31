@@ -19,16 +19,22 @@ A node can also be associated with a smiles structure, if it has a node attribut
 The following options related to protein structures in UCSF Chimera are provided by the RINalyzer version 2.x menus:
 *   **Open Structure from File:**  
     This option should be used for local protein structure files. It launches UCSF Chimera if not already running and loads the file provided by the user into it. The association with currently open RINs is performed automatically in the background.  
+
 *   **Open Protein Structure:**  
     Scans through the currently selected nodes to find all identifiers of protein structure and opens the ones selected by the user in UCSF Chimera. If no nodes are selected, RINalyzer would randomly select one assuming all nodes in the network belong to the same protein structure.
+
 *   **Close Protein Structure:**  
     Scans through the currently selected nodes to find all identifiers of protein structure that are currently open in UCSF Chimera and closes the ones selected by the user. If no nodes are selected, RINalyzer would randomly select one assuming all nodes in the network belong to the same protein structure.  
+
 *   **Create RIN from Chimera:**  
     RINalyzer supports the generation of RINs from a selection of residues in UCSF Chimera. More information is available [here](import.md).
+
 *   **Annotate RIN from Chimera:**  
     This option retrieves all attributes associated with residues in UCSF Chimera and allows the user to select a subset or all of them to be saved as node attributes in the current RIN. In particular, these include secondary structure, residue coordinates, hydrophobicity, solvent accessible surface area (if already computed in UCSF Chimera), occupancy, etc. See also the [structureViz app webpage](http://www.cgl.ucsf.edu/cytoscape/structureViz2/) for more details.
+
 *   **Sync Colors with Chimera:**  
     The color synchronization between network and structure views works in both directions. The `Apply colors from associated Chimera models to current network view` option will get the (ribbon) colors of all residues in the structure associated with the current RIN and save them as node colors in the current view and visual style. The `Apply colors from current network view to associated Chimera models` option will transfer the colors of the nodes in the current view to the residues they are associated with in the structure open in UCSF Chimera. To transfer the colors of the residues in only one model to the corresponding network nodes, select the model in the Molecular Structure Navigator dialog and go to Chimera -> Color synchronization
+
 *   **RIN Layout:**  
     This layout is specifically implemented for RINs and can be found in the `Layout` menu of Cytoscape. It automatically retrieves the current 3D coordinates for residues associated with the nodes in the current network view and uses their projection on a 2D plane as a starting point for a distance-based stress minimization layout.
 
@@ -42,10 +48,15 @@ Interface to UCSF Chimera for Cytoscape 2.x
 The following options are provided by the RINalyzer version 1.x menu *Protein Structure*:
 
 *   **Open structure from file** opens a dialog showing the files on the local file system. This allows loading the PDB file that contains the structure, from which the RIN has been created. In this way, the best matching between the RIN nodes and the residues of the structure can be achieved. The selected PDB file is loaded in Chimera and the protein structure is linked to the currently selected network in Cytoscape.
+
 *   **Open structure by PDB identifier** lists PDB identifiers extracted from the names of the currently opened networks in Cytoscape. RINalyzer can extract the PDB identifier from the network name if the name specifications for RINs are fulfilled (see Section [RIN Specification](rins_spec.md#rins_ff)). If a PDB identifier is selected from the list, the structure with this identifier will be downloaded from the PDB web server and opened by Chimera. The structure is then linked to the currently selected network in Cytoscape.
+
 *   **Close structures** lists the names of the structures currently loaded in Chimera and allows closing any of them or all at once.
+
 *   **Show/Hide backbone** menu is responsible for displaying the protein backbone in both the 2D network and in the 3D view. In the RIN, backbone edges are created for each pair of nodes with consecutive identifiers. In the 3D view, the protein ribbon is visualized using the build-in Chimera methods.
+
 *   **Sync 3D view colors** option uses the colors of the network nodes to color the corresponding residues in the 3D view.
+
 *   **Exit Chimera** closes the Chimera application.
 
 Each time a macromolecular structure is loaded into Chimera, an information dialog indicates the quality of mapping between the currently selected network and the protein structure. To this end, RINalyzer checks if all residues are mapped to all nodes and vice versa. For a successful mapping, the node names have to agree with the specifications for RINs defined in Section [Node Names and Edge Types](rins_spec.md#nodes_edges). A typical mapping statistics is shown in Figure 2.
