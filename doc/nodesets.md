@@ -24,7 +24,7 @@ The *Manage Node Sets* interface provides different user operations, most of whi
 	*   Select nodes in the network view and **create a set of the selected nodes**. If no nodes are selected, the created set is empty.
 	*   **Create a set from a Boolean node attribute**. A network attribute can be loaded by importing a node attribute file into the Cytoscape session or created manually from the Cytoscape menus. This attribute should divide the nodes in two separate groups according to a property of interest.
 	*   **Open** a node set file and load the node set(s) stored in it.
-	*   **Save** one or more sets to a file. The file format is described in Section [Node Set File](file_types.php#nodeset_spec). Only sets that are selected can be saved.
+	*   **Save** one or more sets to a file. The file format is described in Section [Node Set File](file_types.md#nodeset_spec). Only sets that are selected can be saved.
 2. `Edit`: for modifying sets (renaming, adding/deleting nodes/sets);
 	*   Node sets can be **renamed** at any time. However, two sets cannot have the same name and if this is the case, a consecutive number is automatically appended to the set name.
 	*   Select nodes in the network view and **add** these **nodes to a selected set**. If the set is not empty and the nodes to be added belong to another network than the nodes in the set, they are not added. The number of nodes in the set is displayed in parentheses following the set name.

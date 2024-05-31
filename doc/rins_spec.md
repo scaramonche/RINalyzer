@@ -11,7 +11,7 @@ SIF files have the extension *sif*. Lines in the SIF file specify a source node,
 	...
 	nodeY <edge type> nodeZ
 
-Duplicate entries are considered as the same entry and thus ignored. In order to define multiple edges between the same nodes, different edge types have to be used. The tag < edge type > can be any string. More details on SIF files can be found in the [Cytoscape User Manual]("http://www.cytoscape.org/manual/Cytoscape2_6Manual.html#SIF Format")
+Duplicate entries are considered as the same entry and thus ignored. In order to define multiple edges between the same nodes, different edge types have to be used. The tag < edge type > can be any string. More details on SIF files can be found in the [Cytoscape User Manual](http://www.cytoscape.org/manual/Cytoscape2_6Manual.html#SIF Format)
 
 For RINalyzer version 1.x, the RIN name should contain the PDB identifier of the protein, for example, "pdb1abc.sif" for a RIN created form the PDB entry 1abc. This specification allows an automatic recognition of the PDB entry of the RIN and is used to automatically download the corresponding PDB file and open it in Chimera. Other information can also be contained in the file name, but it needs to be separated from the PDB identifier by an underscore "_", for example, "net_pdb1abc_new.sif". This is not necessary for RINalyzer version 2.x.
 
@@ -86,7 +86,7 @@ The following is an example for an edge attribute with edge weights:
 
 ### Attribute Files for Cytoscape 2.x
 
-Node and edge attributes are attached to nodes and edges. Attributes for a given node or edge will be applied to all copies of that node or edge in all loaded network files, regardless of whether the attribute file or network file is imported first. The specifications of these file types can be found in the [Cytoscape User Manual]("http://www.cytoscape.org/manual/Cytoscape2_6Manual.html#Node and Edge Attributes").
+Node and edge attributes are attached to nodes and edges. Attributes for a given node or edge will be applied to all copies of that node or edge in all loaded network files, regardless of whether the attribute file or network file is imported first. The specifications of these file types can be found in the [Cytoscape User Manual](http://www.cytoscape.org/manual/Cytoscape2_6Manual.html#Node and Edge Attributes).
 
 Each attribute is stored in a separate file. Node and edge attribute files use the same format. Node attribute file names often have the extension *na*, while edge attribute file names have the extension *ea*.
 
