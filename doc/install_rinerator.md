@@ -10,15 +10,15 @@ Requirements and Installation
 2.  Install Reduce and Probe:
 	1.  Download the latest version of Reduce from [here](http://kinemage.biochem.duke.edu/software/reduce.php) and of Probe from [here](http://kinemage.biochem.duke.edu/software/probe.php).
 	2.  Create symbolic links to the Reduce and Probe executables, e.g., in your user's `$USER_HOME/bin` directory, using the following shell commands:    
-	    	cd $USER_HOME/bin
-	    	ln -s PROGRAMS_DIR/reduce.3.23.130521.linuxi386 reduce
-	    	ln -s PROGRAMS_DIR/probe.2.16.130520.linuxi386 probe
+	    	`cd $USER_HOME/bin`  
+	    `ln -s PROGRAMS_DIR/reduce.3.23.130521.linuxi386 reduce`  
+	    	`ln -s PROGRAMS_DIR/probe.2.16.130520.linuxi386 probe`  
     	
 3.  Install RINerator:
 	1.  Download the latest RINerator package from [here](../rinerator/RINerator_V0.5.1.tar.gz).
 	2.  Set a directory for installation (`INST_DIR`).
 	3.  Move the package RINerator_V0.5.X.tar.gz to INST_DIR and extract its content, e.g. on a linux machine, type shell command:	    
-		tar xvzf RINerator_V0.5.X.tar.gz
+		`tar xvzf RINerator_V0.5.X.tar.gz`   
 	4.  This creates RINerator_V0.5.X directory with:
 		*   `README.TXT`: This instruction file
 		*   `Source`: Python scripts
@@ -27,11 +27,11 @@ Requirements and Installation
 4.  Test installation:
 	1.  Go to the test directory: INST_DIR/RINerator_V0.5.X/Test
 	2.  Execute the shell commands:	    
-	    	../Source/get_chains.py PDB/pdb1hiv.ent Results/ INPUT/chains_1hiv_A.txt
-	    	../Source/get_conservation.py - name+score INPUT/pdb1hiv_ConsrufDB_align.fasta Results/pdb1hiv_h_cons.txt Results/pdb1hiv_h_cons.log Results/pdb1hiv_h_res.txt
-	    	../Source/get_data.py Results/pdb1hiv_h_res.txt Results/pdb1hiv_h_data.na 1hiv
+	    	`../Source/get_chains.py PDB/pdb1hiv.ent Results/ INPUT/chains_1hiv_A.txt`  
+	    	`../Source/get_conservation.py - name+score INPUT/pdb1hiv_ConsrufDB_align.fasta Results/pdb1hiv_h_cons.txt Results/pdb1hiv_h_cons.log Results/pdb1hiv_h_res.txt`   
+	    `../Source/get_data.py Results/pdb1hiv_h_res.txt Results/pdb1hiv_h_data.na 1hiv`  
 	3.  The following files should be generated in the Results directory:	    
-	    	pdb1hiv_h.ent            PDB with hydrogen atoms
+	    	`pdb1hiv_h.ent            PDB with hydrogen atoms
 	    	pdb1hiv_h.probe          probe result file 
 	    	pdb1hiv_h.sif            network file of residue interactions, can be loaded into Cytoscape
 	    	pdb1hiv_h_cons.log       log file of conservation computation
@@ -39,9 +39,8 @@ Requirements and Installation
 	    	pdb1hiv_h_data.na        node attribute file with external data retrieved from AA index
 	    	pdb1hiv_h_nrint.ea       edge attribute file with number of interactions between residues
 	    	pdb1hiv_h_intsc.ea       edge attribute file with score of interaction between residues
-	    	pdb1hiv_h_res.txt        list of all residues
-
-4.  These files should be identical to precomputed files that are included in directory `INST_DIR/RINerator_V0.5.X/Test/OUTPUT/` (you can compare them with diff).
+	    	pdb1hiv_h_res.txt        list of all residues`
+	4.  These files should be identical to precomputed files that are included in directory `INST_DIR/RINerator_V0.5.X/Test/OUTPUT/` (you can compare them with diff).
   
 
 * * *
