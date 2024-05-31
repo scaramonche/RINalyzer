@@ -10,6 +10,7 @@ Requirements and Installation
 2.  Install Reduce and Probe:
 	1.  Download the latest version of Reduce from [here](http://kinemage.biochem.duke.edu/software/reduce.php) and of Probe from [here](http://kinemage.biochem.duke.edu/software/probe.php).
 	2.  Create symbolic links to the Reduce and Probe executables, e.g., in your user's `$USER_HOME/bin` directory, using the following shell commands:    
+
 		    	cd $USER_HOME/bin
 		    ln -s PROGRAMS_DIR/reduce.3.23.130521.linuxi386 reduce
 		    	ln -s PROGRAMS_DIR/probe.2.16.130520.linuxi386 probe
@@ -27,10 +28,13 @@ Requirements and Installation
 4.  Test installation:
 	1.  Go to the test directory: INST_DIR/RINerator_V0.5.X/Test
 	2.  Execute the shell commands:	    
-		    	../Source/get_chains.py PDB/pdb1hiv.ent Results/ INPUT/chains_1hiv_A.txt
-		    	../Source/get_conservation.py - name+score INPUT/pdb1hiv_ConsrufDB_align.fasta Results/pdb1hiv_h_cons.txt Results/pdb1hiv_h_cons.log Results/pdb1hiv_h_res.txt
-		    ../Source/get_data.py Results/pdb1hiv_h_res.txt Results/pdb1hiv_h_data.na 1hiv
+
+		../Source/get_chains.py PDB/pdb1hiv.ent Results/ INPUT/chains_1hiv_A.txt
+		../Source/get_conservation.py - name+score INPUT/pdb1hiv_ConsrufDB_align.fasta Results/pdb1hiv_h_cons.txt Results/pdb1hiv_h_cons.log Results/pdb1hiv_h_res.txt
+		../Source/get_data.py Results/pdb1hiv_h_res.txt Results/pdb1hiv_h_data.na 1hiv
+
 	3.  The following files should be generated in the Results directory:
+
 		    	pdb1hiv_h.ent            PDB with hydrogen atoms
 		    	pdb1hiv_h.probe          probe result file 
 		    	pdb1hiv_h.sif            network file of residue interactions, can be loaded into Cytoscape
