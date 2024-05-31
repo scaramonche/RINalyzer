@@ -10,9 +10,9 @@ Requirements and Installation
 2.  Install Reduce and Probe:
 	1.  Download the latest version of Reduce from [here](http://kinemage.biochem.duke.edu/software/reduce.php) and of Probe from [here](http://kinemage.biochem.duke.edu/software/probe.php).
 	2.  Create symbolic links to the Reduce and Probe executables, e.g., in your user's `$USER_HOME/bin` directory, using the following shell commands:    
-	    	`cd $USER_HOME/bin`  
-	    `ln -s PROGRAMS_DIR/reduce.3.23.130521.linuxi386 reduce`  
-	    	`ln -s PROGRAMS_DIR/probe.2.16.130520.linuxi386 probe`  
+		    	cd $USER_HOME/bin
+		    ln -s PROGRAMS_DIR/reduce.3.23.130521.linuxi386 reduce
+		    	ln -s PROGRAMS_DIR/probe.2.16.130520.linuxi386 probe
     	
 3.  Install RINerator:
 	1.  Download the latest RINerator package from [here](../rinerator/RINerator_V0.5.1.tar.gz).
@@ -27,11 +27,10 @@ Requirements and Installation
 4.  Test installation:
 	1.  Go to the test directory: INST_DIR/RINerator_V0.5.X/Test
 	2.  Execute the shell commands:	    
-	    	`../Source/get_chains.py PDB/pdb1hiv.ent Results/ INPUT/chains_1hiv_A.txt`  
-	    	`../Source/get_conservation.py - name+score INPUT/pdb1hiv_ConsrufDB_align.fasta Results/pdb1hiv_h_cons.txt Results/pdb1hiv_h_cons.log Results/pdb1hiv_h_res.txt`   
-	    `../Source/get_data.py Results/pdb1hiv_h_res.txt Results/pdb1hiv_h_data.na 1hiv`  
+		    	../Source/get_chains.py PDB/pdb1hiv.ent Results/ INPUT/chains_1hiv_A.txt
+		    	../Source/get_conservation.py - name+score INPUT/pdb1hiv_ConsrufDB_align.fasta Results/pdb1hiv_h_cons.txt Results/pdb1hiv_h_cons.log Results/pdb1hiv_h_res.txt
+		    ../Source/get_data.py Results/pdb1hiv_h_res.txt Results/pdb1hiv_h_data.na 1hiv
 	3.  The following files should be generated in the Results directory:
-		    
 		    	pdb1hiv_h.ent            PDB with hydrogen atoms
 		    	pdb1hiv_h.probe          probe result file 
 		    	pdb1hiv_h.sif            network file of residue interactions, can be loaded into Cytoscape
@@ -41,7 +40,7 @@ Requirements and Installation
 		    	pdb1hiv_h_nrint.ea       edge attribute file with number of interactions between residues
 		    	pdb1hiv_h_intsc.ea       edge attribute file with score of interaction between residues
 		    	pdb1hiv_h_res.txt        list of all residues
-	
+
 	4.  These files should be identical to precomputed files that are included in directory `INST_DIR/RINerator_V0.5.X/Test/OUTPUT/` (you can compare them with diff).
   
 
@@ -50,9 +49,9 @@ Requirements and Installation
 Examples
 --------
 
-## 1. Example  
+### 1. Example  
 To create a RIN from all chains (and ligands) of a protein in a PDB file, execute the shell command:  
-    
+
 	INST_DIR/RINerator_V0.5.X/Source/get_chains.py path_pdb path_output path_chains [path_ligands]
 
 Parameters:  
@@ -66,10 +65,10 @@ Parameters:
     *   examples: "NOA,I,1" or "NOA,,1"
     
 Test command from within the `RINerator_V0.5.X` directory:  
-    
+
     	Source/get_chains.py Test/PDB/pdb1hiv.ent Test/Results/ Test/INPUT/chains_1hiv_all.txt Test/INPUT/ligands_1hiv_all.txt 
-      
-## 2.  Example  
+
+### 2.  Example  
 To create a RIN from a specific selection of residues in a PDB file, execute the shell command:  
     
 	INST_DIR/RINerator_V0.5.X/Source/get_segments.py path_pdb path_output path_segments [path_ligands]
@@ -90,10 +89,10 @@ Parameters:
     
       
 Test command from within the RINerator_V0.5.X directory:  
-    
+
     	Source/get_segments.py Test/PDB/pdb1hiv.ent Test/Results/ Test/INPUT/segments_1hiv.txt Test/INPUT/ligands_1hiv_all.txt
-    
-## 3.  Example  
+
+### 3.  Example  
 To calculate conservation scores from a user-specified MSA file, execute the shell command:  
 
 	INST_DIR/RINerator_V0.5.X/Source/get_conservation.py gap_format output_format path_alignment path_out path_log [path_id]
@@ -110,12 +109,12 @@ Parameters:
 *   `path_id`: [optional] file with nodes identifiers (according to the NONgaps positions in the first sequence in alignment) in TXT format (should not contain empty lines)
 
 Test command from within the `RINerator_V0.5.X` directory:  
-    
+
     	Source/get_conservation.py - name+score Test/INPUT/pdb1hiv_ConsrufDB_align.fasta Test/Results/pdb1hiv_h_cons.txt Test/Results/pdb1hiv_h_cons.log Test/OUTPUT/pdb1hiv_h_res.txt
-    
+
 Note that we use the `Test/OUTPUT/pdb1hiv_h_res.txt` identifier file since it contains *only* the residue nodes from chain A in contrast to `Test/Results/pdb1hiv_h_res.txt`, which currently contains all residue nodes assuming the previous test commands were executed.
   
-## 4.  Example  
+### 4.  Example  
 To retrieve data from external resources, such as AAindex and ConSurfDB, execute the shell command:  
 
 	INST_DIR/RINerator_V0.5.X/Source/get_data.py path_id path_output pdb_id [path_input]
@@ -166,7 +165,7 @@ So far, the following data are retrieved:
 *   `ovl unweighted`: number of 'overlap' edges (residue interactions)
   
   
-## 5.  Example  
+### 5.  Example  
 To create a RIN using a job file (as provided in the TEST directory or created for versions of RINalyzer below 0.5), execute the command:
 
 	INST_DIR/RINerator_V0.5.X/Source/get_ncint.py Test/JOBS/test_job_*.py
