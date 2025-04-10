@@ -96,5 +96,5 @@ Affiliations as of 2014:
 Contact
 -------
 
-If you have any questions, comments, suggestions or criticism, feel free to create an issue on here.
+If you have any questions, comments, suggestions or criticism, feel free to create an issue here on GitHub.
 
