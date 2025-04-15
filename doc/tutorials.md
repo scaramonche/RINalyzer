@@ -16,8 +16,8 @@ Tutorials for Cytoscape 3.x
 Tutorials for Cytoscape 2.x
 ---------------------------
 
-*   [Tutorial 1: Prepare RIN data](./tut/tutorial1.md) [to be added]
-*   [Tutorial 2: Use node sets](./tut/tutorial2.md) [to be added]
-*   [Tutorial 3: Analyze (un)weighted networks](./tut/tutorial3.md) [to be added]
-*   [Tutorial 4: Compare RINs](./tut/tutorial4.md) [to be added]
-*   [Tutorial 5: Use ConSurf-DB data](./tut/tutorial5.md) [to be added]
+*   [Tutorial 1: Prepare RIN data](./tut/tutorial1.md) 
+*   [Tutorial 2: Use node sets](./tut/tutorial2.md) 
+*   [Tutorial 3: Analyze (un)weighted networks](./tut/tutorial3.md) 
+*   [Tutorial 4: Compare RINs](./tut/tutorial4.md)
+*   [Tutorial 5: Use ConSurf-DB data](./tut/tutorial5.md)
